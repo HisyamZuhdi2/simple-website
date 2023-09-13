@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset c.header ss*/
+body {
+	background-image: url(darkdenim.jpg);
+	
+	font: 16px/28px arial, sans-serif;
+}
+.container {
+	width: 950px;
+	margin: 80px auto;
+	background-color: white;
+	position: relative;
+}
+.top {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 40px;
+	border-bottom: 3px solid white;
+	z-index: 9999;
+}
+
+.header .judul {
+	padding-top: 20px;
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 40px;
+}
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-left: 20px;
+	padding-bottom: 20px;
+}
+
+.header a {
+	text-decoration: none;
+	color: #32CD32;
+	padding: 2px;
+}
+.header a:hover {
+	background-color: red;
+	color: white;
+}
+
+
+
+.hero {
+	height: 400px;
+	background-image: url(kopi.jpg);
+	background-position: 0px -470px;
+	border-top: 5px solid #32CD32;
+	border-bottom: 5px solid chocolate;
+}
+.text h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin:20px;
+}
+.text p {
+	margin: 20px;
+	margin-top: -10px;
+	font-size: 17px;
+	line-height: 18px;
+}
+.text a {
+	color:blue;
+}
+.text .penulis {
+	margin-top:-20px;
+}
+.copy {
+	background-color: black;
+	height: 30px;
+	padding: 8px;
+}
+.copy .tete {
+	color:white;
+	font-size: 12px;
+	text-align: center;
+}
+.main {
+	width: 490px;
+/*ketika float ditaruh di elemen pembungkus maka,*/
+/*float dianggap tidak ada dan backround tiba2 menghilang*/
+/*cara mengatasinya harus menggunakan micro clearfix*/
+	float: left;
+}
+/*contoh micro clearfix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+.sidebar {
+	width: 370px;
+	float:right;
+	padding-top:20px;
+}
+.sidebar h3 {
+font-weight: bold;
+}
+.sidebar img {
+	width: 110px;
+	height:110px;
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 7px;
+}
+.sidebar .parag {
+	margin-left: -2px;
+	font:14px/18px arial;
+}
+.insta {
+	width: 170px;
+	height: 130px;
+	background-image: url(insta.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	position: absolute;
+	right:  -60px;
+	top: -5px;
+}
