@@ -82,6 +82,7 @@ body {
 	text-decoration: none;
 	color: #32CD32;
 	padding: 2px;
+	font-weight: bold;
 }
 .header a:hover {
 	background-color: red;
